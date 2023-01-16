@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400&display=swap');
+
+body {
+    font-family: Heebo, Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+/* Header */
+#titulo {
+    background-image: url("../images/apple-pie.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    margin: 15px;
+}
+
+#titulo h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 250px;
+    margin-top: 0;
+}
+
+/* Sections */
+
+.container {
+    max-width: 900px;
+    margin:0 auto;
+    border-bottom: 2px solid gray;
+}
+
+#section-1 p {
+    margin-top: 80px;
+    font-weight: 200;
+    font-size: 26px;
+    text-align: justify;
+}
+
+#section-1 img,
+#section-2 img {
+    max-width: 50%;
+    margin: 0 auto 26px auto;
+    position: relative;
+    left: 25%;
+}
+
+#section-2 h3,
+#section-3 h3 {
+    font-size:25px;
+    margin-top: 40px;
+}
+#section-2 li {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#section-2 li::marker {
+    content: "- ";
+}
+
+#section-3 {
+    border: none;
+}
+
+#section-3 h3 {
+    margin-bottom: 35px;
+}
+
+#section-3 ol {
+    counter-reset: list;
+}
+
+#section-3 li {
+    font-size: 23px;
+    font-weight: 200;
+    text-align: justify;
+    list-style: none;
+}
+
+ol > li:before {
+    content: counter(list) ") ";
+    counter-increment: list;
+}
+
